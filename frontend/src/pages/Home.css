@@ -1,0 +1,59 @@
+/* Reset some basic elements for consistency across browsers */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  nav {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+  }
+  
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow items to wrap on small screens */
+  }
+  
+  li {
+    margin: 0 1em;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  a:hover {
+    color: #ff6347; /* Tomato color for hover effect */
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    nav {
+      padding: 1em;
+    }
+    
+    ul {
+      flex-direction: column; /* Stack items vertically on small screens */
+      align-items: center;
+    }
+    
+    li {
+      margin: 0.5em 0;
+    }
+    
+    a {
+      font-size: 1em; /* Slightly smaller font size on small screens */
+    }
+  }
+  
