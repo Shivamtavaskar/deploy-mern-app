@@ -24,7 +24,7 @@ const Login = () => {
     }
 
     try {
-      const res = await axios.post("http://localhost:8080/auth/login", inputData);
+      const res = await axios.post("https://deploy-mern-app-three.vercel.app/auth/login", inputData);
       const result = res.data; // Use res.data instead of res.json()
       const { success, message, name, jwtToken } = result;
 
