@@ -37,7 +37,7 @@ const Profile = () => {
         'Authorization': `Bearer ${token}`
       };
 
-      const res = await axios.get('http://localhost:8080/products', { headers });
+      const res = await axios.get('https://deploy-mern-app-three.vercel.app/products', { headers });
       const result = res.data;
       console.log(result);
       setProducts(result);
