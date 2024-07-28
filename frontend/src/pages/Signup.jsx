@@ -27,7 +27,7 @@ const Signup = () => {
     }
 
     try {
-      const res = await axios.post("http://localhost:8080/auth/signup", inputData);
+      const res = await axios.post("https://deploy-mern-app-three.vercel.app/auth/signup", inputData);
       const result = res.data; // Use res.data instead of res.json()
       const { success, message } = result;
 
